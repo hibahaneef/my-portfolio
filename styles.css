@@ -1127,6 +1127,14 @@ header.scrolled {
   border-color: rgba(212, 175, 55, 0.15);
 }
 
+#experience {
+  padding-bottom: 20px;
+}
+
+#timeline {
+  padding-top: 30px;
+}
+
 /* ==========================================================================
    Certifications & Experience Section
    ========================================================================== */
