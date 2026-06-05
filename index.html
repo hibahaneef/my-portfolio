@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <!-- Primary SEO Meta Tags -->
+  <title>Hiba Haneefa | Data Analyst Portfolio</title>
+  <meta name="title" content="Hiba Haneefa | Data Analyst Portfolio">
+  <meta name="description" content="Data Analyst portfolio of Hiba Haneefa. Specializing in SQL, Power BI, Tableau, Python, and data storytelling to convert complex datasets into actionable business insights.">
+  <meta name="keywords" content="Data Analyst, Business Analyst, BI Analyst, SQL, Power BI, Python, Tableau, Portfolio, Hiba Haneefa, Dashboard, Data Storytelling">
+  <meta name="author" content="Hiba Haneefa">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hibahaneefa.dev/">
+  <meta property="og:title" content="Hiba Haneefa | Data Analyst Portfolio">
+  <meta property="og:description" content="Transforming raw data into meaningful insights through analytics, visualization, and data storytelling.">
+  <meta property="og:image" content="assets/profile.jpg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Hiba Haneefa | Data Analyst Portfolio">
+  <meta property="twitter:description" content="Data Analyst specializing in SQL, Power BI, and Python. Explore interactive dashboards and analytical research projects.">
+  <meta property="twitter:image" content="assets/profile.jpg">
+
+  <!-- Favicon placeholder (can be customized) -->
+  <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📊</text></svg>">
+
+  <!-- Core Styling Sheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Background Particle Canvas -->
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- ==========================================================================
+       Preloader Overlay
+       ========================================================================== -->
+  <div id="preloader">
+    <div class="loader-container">
+      <div class="loader-logo">
+        <div class="loader-ring"></div>
+        <div class="loader-hexagon"></div>
+      </div>
+      <div class="loader-text">Hiba Haneefa</div>
+      <div class="loader-subtitle">Loading Analytics System</div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       Sticky Header & Navbar
+       ========================================================================== -->
+  <header id="main-header">
+    <a href="#home" class="logo" id="nav-logo">
+      <span>HIBA</span> HANEEFA <div class="logo-dot"></div>
+    </a>
+    
+    <button class="mobile-menu-btn" id="mobile-toggle" aria-label="Toggle Navigation Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    
+    <nav class="nav-links" id="nav-menu">
+      <a href="#home" class="nav-item active">Home</a>
+      <a href="#about" class="nav-item">About</a>
+      <a href="#skills" class="nav-item">Skills</a>
+      <a href="#projects" class="nav-item">Projects</a>
+      <a href="#experience" class="nav-item">Experience</a>
+      <a href="#timeline" class="nav-item">Timeline</a>
+      <a href="#contact" class="nav-item">Contact</a>
+      <a href="assets/resume.pdf" class="btn-nav-resume" download id="btn-download-resume">Resume</a>
+    </nav>
+  </header>
+
+  <!-- ==========================================================================
+       Hero Section
+       ========================================================================== -->
+  <section id="home" class="section">
+    <div class="hero-container">
+      
+      <!-- Text/Intro Block (Left Side) -->
+      <div class="hero-content reveal-left">
+        <span class="hero-welcome">Portfolio of Hiba Haneefa</span>
+        <h1 class="hero-name">HIBA HANEEFA</h1>
+        
+        <!-- Animated typing element -->
+        <div class="hero-headline">
+          <span id="typing-text"></span>
+        </div>
+        
+        <p class="hero-intro">
+          Transforming raw data into meaningful insights through analytics, visualization, and data storytelling. Aspiring Data Analyst passionate about uncovering patterns, solving business problems, and creating impactful dashboards that drive better decisions.
+        </p>
+        
+        <div class="hero-ctas">
+          <a href="#projects" class="btn btn-primary" id="hero-btn-projects">
+            <i data-lucide="bar-chart-2"></i> View Projects
+          </a>
+          <a href="https://wa.link/eaazt4" target="_blank" class="btn btn-secondary" id="hero-btn-whatsapp">
+            <i data-lucide="message-square"></i> WhatsApp Me
+          </a>
+        </div>
+      </div>
+      
+      <!-- Profile Picture (Right Side) -->
+      <div class="hero-image-col reveal-right">
+        <div class="hero-image-container">
+          <div class="hero-image-frame">
+            <img src="assets/profile.jpg" alt="Hiba Haneefa - Data Analyst headshot">
+          </div>
+        </div>
+      </div>
+      
+      <!-- First Screen Recruiter Statistics Bar -->
+      <div class="hero-stats-row reveal">
+        <div class="hero-stats-grid">
+          
+          <!-- Stat 1 -->
+          <div class="glass-card stat-card">
+            <div class="stat-icon"><i data-lucide="users"></i></div>
+            <div class="stat-number" data-target="2000">0</div>
+            <div class="stat-label">Survey Responses Analyzed</div>
+          </div>
+          
+          <!-- Stat 2 -->
+          <div class="glass-card stat-card">
+            <div class="stat-icon"><i data-lucide="folder-git-2"></i></div>
+            <div class="stat-number" data-target="3">0</div>
+            <div class="stat-label">Core Analytics Projects</div>
+          </div>
+          
+          <!-- Stat 3 -->
+          <div class="glass-card stat-card">
+            <div class="stat-icon"><i data-lucide="terminal"></i></div>
+            <div class="stat-tags">
+              <span class="stat-tag">SQL</span>
+              <span class="stat-tag">Power BI</span>
+              <span class="stat-tag">Python</span>
+              <span class="stat-tag">Excel</span>
+            </div>
+            <div class="stat-label" style="margin-top: 15px;">Core Stack</div>
+          </div>
+          
+          <!-- Stat 4 -->
+          <div class="glass-card stat-card">
+            <div class="stat-icon"><i data-lucide="graduation-cap"></i></div>
+            <div style="font-size: 1.05rem; font-weight: 700; color: var(--accent); margin-top: 5px;">B.Com CA</div>
+            <div style="font-size: 0.75rem; color: var(--text-secondary); margin-top: 2px;">Kannur University</div>
+            <div class="stat-label" style="margin-top: 10px;">Education</div>
+          </div>
+          
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       About Section
+       ========================================================================== */ -->
+  <section id="about" class="section">
+    <div class="section-header reveal">
+      <span class="section-subtitle">Biography</span>
+      <h2 class="section-title">About Me</h2>
+    </div>
+    
+    <div class="about-grid">
+      <!-- Profile Side -->
+      <div class="about-image-col reveal-left">
+        <div class="about-image-container">
+          <div class="about-image-frame">
+            <img src="assets/profile.jpg" alt="Hiba Haneefa profile portrait">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Text Block -->
+      <div class="about-text reveal-right">
+        <h3>Converting complex datasets into <span>actionable business insights</span></h3>
+        <p>
+          I am Hiba Haneefa, an aspiring Data Analyst with a strong background in Commerce and Computer Applications. I thrive on diving deep into datasets to solve practical business questions, structure information, and deliver visual summaries that stakeholders can immediately use.
+        </p>
+        <p>
+          My focus is centered on merging technical analysis (SQL database design, Power BI/Tableau models, and Python scripting) with a business-driven mindset. I believe that data is only as powerful as the story it tells, and I work hard to translate complex backend numbers into digestible insights.
+        </p>
+        
+        <div class="about-highlights">
+          <!-- Item 1 -->
+          <div class="about-highlight-item">
+            <div class="about-highlight-icon"><i data-lucide="search"></i></div>
+            <div class="about-highlight-content">
+              <h4>Analytical Mindset</h4>
+              <p>Passionate about finding structural patterns, cleansing datasets, and optimizing data flow.</p>
+            </div>
+          </div>
+          
+          <!-- Item 2 -->
+          <div class="about-highlight-item">
+            <div class="about-highlight-icon"><i data-lucide="book-open"></i></div>
+            <div class="about-highlight-content">
+              <h4>Data Storytelling</h4>
+              <p>Designing interactive, narrative dashboards that clarify complex scenarios at a single glance.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Skills Section
+       ========================================================================== -->
+  <section id="skills" class="section">
+    <div class="section-header reveal">
+      <span class="section-subtitle">Core Diagnostics</span>
+      <h2 class="section-title">Technical & Soft Skills</h2>
+    </div>
+    
+    <div class="skills-container">
+      
+      <!-- Technical Skills -->
+      <div class="skills-column reveal-left">
+        <h3 class="skills-column-title">
+          <i data-lucide="settings"></i> Technical Competencies
+        </h3>
+        
+        <div class="skills-grid">
+          <!-- Power BI -->
+          <div class="glass-card skill-card">
+            <div class="skill-info">
+              <span class="skill-icon"><i data-lucide="pie-chart"></i></span>
+              <span class="skill-name">Power BI</span>
+            </div>
+            <div class="skill-meter" data-score="9">
+              <!-- JS will inject active meter blocks -->
+            </div>
+          </div>
+          
+          <!-- SQL -->
+          <div class="glass-card skill-card">
+            <div class="skill-info">
+              <span class="skill-icon"><i data-lucide="database"></i></span>
+              <span class="skill-name">SQL</span>
+            </div>
+            <div class="skill-meter" data-score="9">
+            </div>
+          </div>
+          
+          <!-- Python -->
+          <div class="glass-card skill-card">
+            <div class="skill-info">
+              <span class="skill-icon"><i data-lucide="code-2"></i></span>
+              <span class="skill-name">Python</span>
+            </div>
+            <div class="skill-meter" data-score="8">
+            </div>
+          </div>
+          
+          <!-- Tableau -->
+          <div class="glass-card skill-card">
+            <div class="skill-info">
+              <span class="skill-icon"><i data-lucide="line-chart"></i></span>
+              <span class="skill-name">Tableau</span>
+            </div>
+            <div class="skill-meter" data-score="7">
+            </div>
+          </div>
+
+          <!-- Excel -->
+          <div class="glass-card skill-card">
+            <div class="skill-info">
+              <span class="skill-icon"><i data-lucide="grid"></i></span>
+              <span class="skill-name">Excel</span>
+            </div>
+            <div class="skill-meter" data-score="9">
+            </div>
+          </div>
+
+          <!-- Power Query -->
+          <div class="glass-card skill-card">
+            <div class="skill-info">
+              <span class="skill-icon"><i data-lucide="filter"></i></span>
+              <span class="skill-name">Power Query</span>
+            </div>
+            <div class="skill-meter" data-score="8">
+            </div>
+          </div>
+
+          <!-- Data Cleaning -->
+          <div class="glass-card skill-card">
+            <div class="skill-info">
+              <span class="skill-icon"><i data-lucide="sparkles"></i></span>
+              <span class="skill-name">Data Cleaning</span>
+            </div>
+            <div class="skill-meter" data-score="9">
+            </div>
+          </div>
+
+          <!-- Data Visualization -->
+          <div class="glass-card skill-card">
+            <div class="skill-info">
+              <span class="skill-icon"><i data-lucide="eye"></i></span>
+              <span class="skill-name">Data Viz</span>
+            </div>
+            <div class="skill-meter" data-score="9">
+            </div>
+          </div>
+
+          <!-- DAX -->
+          <div class="glass-card skill-card">
+            <div class="skill-info">
+              <span class="skill-icon"><i data-lucide="calculator"></i></span>
+              <span class="skill-name">DAX</span>
+            </div>
+            <div class="skill-meter" data-score="8">
+            </div>
+          </div>
+
+          <!-- Dashboard Development -->
+          <div class="glass-card skill-card">
+            <div class="skill-info">
+              <span class="skill-icon"><i data-lucide="layout"></i></span>
+              <span class="skill-name">Dashboard Dev</span>
+            </div>
+            <div class="skill-meter" data-score="9">
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Soft Skills -->
+      <div class="skills-column reveal-right">
+        <h3 class="skills-column-title">
+          <i data-lucide="user"></i> Professional Capabilities
+        </h3>
+        
+        <div class="skills-grid">
+          <!-- Problem Solving -->
+          <div class="glass-card skill-card">
+            <div class="skill-info">
+              <span class="skill-icon"><i data-lucide="lightbulb"></i></span>
+              <span class="skill-name">Problem Solving</span>
+            </div>
+            <div class="skill-meter" data-score="9">
+            </div>
+          </div>
+          
+          <!-- Analytical Thinking -->
+          <div class="glass-card skill-card">
+            <div class="skill-info">
+              <span class="skill-icon"><i data-lucide="cpu"></i></span>
+              <span class="skill-name">Analytical Thinking</span>
+            </div>
+            <div class="skill-meter" data-score="9">
+            </div>
+          </div>
+          
+          <!-- Data Storytelling -->
+          <div class="glass-card skill-card">
+            <div class="skill-info">
+              <span class="skill-icon"><i data-lucide="message-square"></i></span>
+              <span class="skill-name">Data Storytelling</span>
+            </div>
+            <div class="skill-meter" data-score="9">
+            </div>
+          </div>
+          
+          <!-- Communication -->
+          <div class="glass-card skill-card">
+            <div class="skill-info">
+              <span class="skill-icon"><i data-lucide="users-2"></i></span>
+              <span class="skill-name">Communication</span>
+            </div>
+            <div class="skill-meter" data-score="8">
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Featured Projects Section
+       ========================================================================== -->
+  <section id="projects" class="section">
+    <div class="section-header reveal">
+      <span class="section-subtitle">Portfolio Showcases</span>
+      <h2 class="section-title">Featured Projects</h2>
+    </div>
+    
+    <!-- Filtering buttons -->
+    <div class="projects-filters reveal">
+      <button class="filter-btn active" data-filter="all">All Projects</button>
+      <button class="filter-btn" data-filter="powerbi">Power BI / Tableau</button>
+      <button class="filter-btn" data-filter="sql">SQL / Database</button>
+      <button class="filter-btn" data-filter="python">Python / Analytics</button>
+    </div>
+    
+    <div class="projects-grid">
+      
+      <!-- Project 1 (Featured, Double Wide) -->
+      <div class="glass-card project-card featured reveal" data-category="powerbi">
+        <div class="project-details">
+          <span class="project-tag-indicator">Featured Case Study</span>
+          <h3 class="project-title">Gen Z And Their Politics</h3>
+          <div class="project-desc">
+            <p>A comprehensive research and survey analysis investigating the political patterns of Gen Z across Kerala.</p>
+            <ul>
+              <li>Collected and analyzed 2,000+ distinct survey responses.</li>
+              <li>Performed data cleaning, structural normalization, and analysis of demographic patterns.</li>
+              <li>Built interactive Power BI dashboards highlighting sentiment and engagement metrics.</li>
+              <li>Identified political awareness levels, trust factors, and primary information sources.</li>
+              <li>Generated critical business-ready insights from survey profiles.</li>
+            </ul>
+          </div>
+          
+          <div class="project-tags">
+            <span class="project-tag">Power BI</span>
+            <span class="project-tag">Survey Analytics</span>
+            <span class="project-tag">Data Cleaning</span>
+            <span class="project-tag">Demographics</span>
+          </div>
+          
+          <div class="project-links">
+            <a href="https://wa.link/eaazt4" target="_blank" class="project-link">
+              Request Live Demo <i data-lucide="arrow-up-right"></i>
+            </a>
+          </div>
+          
+          <!-- Key Metric Highlights -->
+          <div class="project-meta-grid">
+            <div class="project-meta-box">
+              <div class="project-meta-val">2,000+</div>
+              <div class="project-meta-label">Responses</div>
+            </div>
+            <div class="project-meta-box">
+              <div class="project-meta-val">Interactive</div>
+              <div class="project-meta-label">Dashboard</div>
+            </div>
+            <div class="project-meta-box">
+              <div class="project-meta-val">Demographic</div>
+              <div class="project-meta-label">Storytelling</div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Premium SVG Dashboard Visual -->
+        <div class="project-visual">
+          <svg viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Grid Lines -->
+            <path d="M50 240 H350 M50 180 H350 M50 120 H350 M50 60 H350" stroke="#D4AF37" stroke-opacity="0.08" stroke-width="1"/>
+            <!-- Y-Axis & X-Axis -->
+            <path d="M50 40 V240 H360" stroke="#D4AF37" stroke-opacity="0.25" stroke-width="1.5"/>
+            
+            <!-- Dashboard Bar Charts (Representing Gen Z demographics) -->
+            <rect x="80" y="140" width="30" height="100" rx="3" fill="#D4AF37" fill-opacity="0.8" />
+            <rect x="140" y="90" width="30" height="150" rx="3" fill="#D4AF37" fill-opacity="0.5" />
+            <rect x="200" y="120" width="30" height="120" rx="3" fill="#D4AF37" fill-opacity="0.9" />
+            <rect x="260" y="60" width="30" height="180" rx="3" fill="#D4AF37" fill-opacity="0.3" />
+            <rect x="320" y="150" width="30" height="90" rx="3" fill="#D4AF37" fill-opacity="0.6" />
+
+            <!-- Trending Line Overlay -->
+            <path d="M95 130 Q155 80 215 110 T335 130" stroke="#D4AF37" stroke-width="2.5" stroke-linecap="round" filter="drop-shadow(0 0 6px rgba(212,175,55,0.6))"/>
+            
+            <!-- Floating Dashboard Tags -->
+            <g transform="translate(180, 20)">
+              <rect width="160" height="30" rx="15" fill="#1A1A1A" stroke="#D4AF37" stroke-opacity="0.3" stroke-width="1"/>
+              <text x="80" y="18" fill="#F5F5F5" font-size="9" font-family="Inter" font-weight="600" text-anchor="middle">Sentiment: Active Engagement</text>
+            </g>
+          </svg>
+        </div>
+      </div>
+      
+      <!-- Project 2 (Standard, Power BI / Excel category) -->
+      <div class="glass-card project-card reveal-left" data-category="powerbi">
+        <div class="project-details">
+          <span class="project-tag-indicator">Dashboard Development</span>
+          <h3 class="project-title">iPhone Comparison Dashboard</h3>
+          <div class="project-desc">
+            <p>A dynamic analytics dashboard comparing features and value trends of various iPhone models using web-sourced data models.</p>
+            <ul>
+              <li>Executed comprehensive ETL pipeline via Power Query.</li>
+              <li>Built custom relational mapping and dynamic parameters.</li>
+              <li>Created interactive slicers, price indicators, and comparison KPI cards.</li>
+            </ul>
+          </div>
+          
+          <div class="project-tags">
+            <span class="project-tag">Power Query</span>
+            <span class="project-tag">KPI Modeling</span>
+            <span class="project-tag">Excel Dashboard</span>
+          </div>
+          
+          <div class="project-links">
+            <a href="https://wa.link/eaazt4" target="_blank" class="project-link">
+              Demo details <i data-lucide="arrow-up-right"></i>
+            </a>
+          </div>
+        </div>
+        
+        <div class="project-visual" style="margin-top: 20px;">
+          <svg viewBox="0 0 400 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="40" y="30" width="140" height="130" rx="6" fill="#1A1A1A" stroke="#D4AF37" stroke-opacity="0.2"/>
+            <rect x="220" y="30" width="140" height="130" rx="6" fill="#1A1A1A" stroke="#D4AF37" stroke-opacity="0.2"/>
+            
+            <!-- Metric charts in dashboard boxes -->
+            <circle cx="110" cy="85" r="30" stroke="#D4AF37" stroke-opacity="0.15" stroke-width="4"/>
+            <circle cx="110" cy="85" r="30" stroke="#D4AF37" stroke-width="4" stroke-dasharray="140 190"/>
+            <text x="110" y="90" fill="#F5F5F5" font-size="12" font-family="Playfair Display" font-weight="700" text-anchor="middle">85%</text>
+            <text x="110" y="135" fill="#A0A0A0" font-size="8" font-family="Inter" text-anchor="middle">Specs Match</text>
+            
+            <path d="M240 120 L270 90 L300 110 L340 70" stroke="#D4AF37" stroke-width="2" stroke-linecap="round"/>
+            <circle cx="340" cy="70" r="3" fill="#D4AF37"/>
+            <text x="290" y="135" fill="#A0A0A0" font-size="8" font-family="Inter" text-anchor="middle">Price Trend Analysis</text>
+          </svg>
+        </div>
+      </div>
+      
+      <!-- Project 3 (Standard, SQL Category) -->
+      <div class="glass-card project-card reveal-right" data-category="sql">
+        <div class="project-details">
+          <span class="project-tag-indicator">Database Architecture</span>
+          <h3 class="project-title">Flight Booking System</h3>
+          <div class="project-desc">
+            <p>Designed and optimized a fully normalized relational database managing flight routes, seating, reservations, and passengers.</p>
+            <ul>
+              <li>Created relational schema with 3NF integrity rules.</li>
+              <li>Engineered nested CTE query filters and analytical JOIN queries.</li>
+              <li>Developed custom stored procedures, trigger workflows, and analytical views.</li>
+            </ul>
+          </div>
+          
+          <div class="project-tags">
+            <span class="project-tag">SQL Server</span>
+            <span class="project-tag">Relational Schema</span>
+            <span class="project-tag">Performance Tuning</span>
+          </div>
+          
+          <div class="project-links">
+            <a href="https://wa.link/eaazt4" target="_blank" class="project-link">
+              Schema Files <i data-lucide="arrow-up-right"></i>
+            </a>
+          </div>
+        </div>
+        
+        <div class="project-visual" style="margin-top: 20px;">
+          <svg viewBox="0 0 400 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Database schema blocks -->
+            <rect x="50" y="40" width="110" height="110" rx="4" fill="#1A1A1A" stroke="#D4AF37" stroke-opacity="0.3"/>
+            <rect x="240" y="40" width="110" height="110" rx="4" fill="#1A1A1A" stroke="#D4AF37" stroke-opacity="0.15"/>
+            
+            <line x1="50" y1="70" x2="160" y2="70" stroke="#D4AF37" stroke-opacity="0.3"/>
+            <line x1="240" y1="70" x2="350" y2="70" stroke="#D4AF37" stroke-opacity="0.15"/>
+            
+            <text x="105" y="60" fill="#D4AF37" font-size="10" font-family="Inter" font-weight="600" text-anchor="middle">dbo.Bookings</text>
+            <text x="295" y="60" fill="#A0A0A0" font-size="10" font-family="Inter" font-weight="600" text-anchor="middle">dbo.Flights</text>
+            
+            <!-- Connection line -->
+            <path d="M160 95 H200 V120 H240" stroke="#D4AF37" stroke-width="1.5" stroke-dasharray="4 4" stroke-opacity="0.8"/>
+            <circle cx="160" cy="95" r="3" fill="#D4AF37"/>
+            <circle cx="240" cy="120" r="3" fill="#D4AF37"/>
+          </svg>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Experience & Certifications Section
+       ========================================================================== -->
+  <section id="experience" class="section">
+    <div class="section-header reveal">
+      <span class="section-subtitle">Credentials</span>
+      <h2 class="section-title">Certifications & Experience</h2>
+    </div>
+    
+    <div class="experience-grid">
+      <!-- Certification Card -->
+      <div class="glass-card exp-card reveal-left">
+        <span class="exp-badge">Virtual simulation</span>
+        <h3 class="exp-title">Deloitte Australia</h3>
+        <h4 class="exp-subtitle">Data Analytics Job Simulation</h4>
+        
+        <ul class="exp-highlights">
+          <li>Completed intensive data discovery, cleansing, and analytical modeling practices.</li>
+          <li>Constructed targeted business dashboard frameworks and predictive dashboards.</li>
+          <li>Generated data visualization slides translating quantitative metrics into direct strategies.</li>
+          <li>Presented executive summaries outlining dataset findings to mock business clients.</li>
+        </ul>
+      </div>
+      
+      <!-- Experience Card -->
+      <div class="glass-card exp-card reveal-right">
+        <span class="exp-badge">Internship</span>
+        <h3 class="exp-title">HACA Academy</h3>
+        <h4 class="exp-subtitle">Data Analyst Intern</h4>
+        
+        <ul class="exp-highlights">
+          <li>Conducted Excel metrics reporting to support marketing and sales teams.</li>
+          <li>Collaborated on visual reporting formats and dashboard creation.</li>
+          <li>Assisted in identifying operational trends, reducing reporting redundancies.</li>
+          <li>Built pivot matrices, database views, and slide decks summarizing analytics.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Timeline Section
+       ========================================================================== -->
+  <section id="timeline" class="section">
+    <div class="section-header reveal">
+      <span class="section-subtitle">Professional Path</span>
+      <h2 class="section-title">Timeline</h2>
+    </div>
+    
+    <div class="timeline-container">
+      <!-- Center drawing line -->
+      <div class="timeline-line"></div>
+      <div class="timeline-line-progress" id="timeline-progress-bar"></div>
+      
+      <!-- Timeline Item 1 -->
+      <div class="timeline-item reveal">
+        <div class="timeline-date">2022 - 2025</div>
+        <div class="timeline-node"></div>
+        <div class="timeline-content">
+          <div class="glass-card timeline-card">
+            <h3>B.Com (Computer Applications)</h3>
+            <h4>Kannur University</h4>
+            <p style="font-size:0.85rem; margin-top:8px;">Developed fundamental knowledge in commerce, accounting principles, data entry systems, and general software applications.</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Timeline Item 2 -->
+      <div class="timeline-item reveal">
+        <div class="timeline-date">2025</div>
+        <div class="timeline-node"></div>
+        <div class="timeline-content">
+          <div class="glass-card timeline-card">
+            <h3>Data Analyst Internship</h3>
+            <h4>HACA Academy</h4>
+            <p style="font-size:0.85rem; margin-top:8px;">Practical internship role focused on Excel analytics, pivot reporting, data cleaning processes, and visualization modeling.</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Timeline Item 3 -->
+      <div class="timeline-item reveal">
+        <div class="timeline-node"></div>
+        <div class="timeline-date">2025</div>
+        <div class="timeline-content">
+          <div class="glass-card timeline-card">
+            <h3>Deloitte Data Analytics Simulation</h3>
+            <h4>Deloitte Australia / Forage</h4>
+            <p style="font-size:0.85rem; margin-top:8px;">Completed practical tasks in cleaning data, visualization charts, structuring dashboards, and presenting insights to stakeholders.</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Timeline Item 4 -->
+      <div class="timeline-item reveal">
+        <div class="timeline-node"></div>
+        <div class="timeline-date">2025 - 2026</div>
+        <div class="timeline-content">
+          <div class="glass-card timeline-card">
+            <h3>Gen Z Political Analytics Project</h3>
+            <h4>Independent Research</h4>
+            <p style="font-size:0.85rem; margin-top:8px;">Survey analytics project covering over 2,000 voter profiles. Designed ETL pipelines, Power BI models, and segment storytelling charts.</p>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Contact Section
+       ========================================================================== -->
+  <section id="contact" class="section">
+    <div class="section-header reveal">
+      <span class="section-subtitle">Get In Touch</span>
+      <h2 class="section-title">Contact Me</h2>
+    </div>
+    
+    <div class="contact-container reveal">
+      <div class="glass-card contact-card">
+        <h3>Connect For Opportunities</h3>
+        <p>I am actively seeking Data Analyst, Business Analyst, and BI Analyst opportunities. Let's discuss how I can help transform your raw data into impactful decisions.</p>
+        
+        <div class="contact-buttons">
+          <!-- WhatsApp -->
+          <a href="https://wa.link/eaazt4" target="_blank" class="contact-btn whatsapp">
+            <i data-lucide="message-square"></i> WhatsApp
+          </a>
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/in/hiba-hiba/" target="_blank" class="contact-btn linkedin">
+            <i data-lucide="linkedin"></i> LinkedIn
+          </a>
+          <!-- Email -->
+          <a href="mailto:hibahaneef446@gmail.com" class="contact-btn email">
+            <i data-lucide="mail"></i> Email Me
+          </a>
+        </div>
+        
+        <!-- Social profile icon shortcuts -->
+        <div class="contact-social-icons">
+          <a href="https://www.linkedin.com/in/hiba-hiba/" target="_blank" class="social-icon" aria-label="LinkedIn Profile">
+            <i data-lucide="linkedin"></i>
+          </a>
+          <a href="https://wa.link/eaazt4" target="_blank" class="social-icon" aria-label="WhatsApp Chat">
+            <i data-lucide="message-square"></i>
+          </a>
+          <a href="mailto:hibahaneef446@gmail.com" class="social-icon" aria-label="Send Email">
+            <i data-lucide="mail"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Footer Section
+       ========================================================================== -->
+  <footer>
+    <p>Designed and Built by Hiba Haneefa &copy; <span id="current-year">2026</span>. All rights reserved.</p>
+  </footer>
+
+  <!-- ==========================================================================
+       Floating Utilities
+       ========================================================================== -->
+  <button class="back-to-top" id="top-scroller" aria-label="Scroll to top of page">
+    <i data-lucide="arrow-up"></i>
+  </button>
+
+  <!-- CDN Script for Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <!-- Core Script File -->
+  <script src="script.js"></script>
+</body>
+</html>
