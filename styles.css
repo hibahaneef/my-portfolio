@@ -409,7 +409,7 @@ header.scrolled {
    Reusable UI Elements / Components
    ========================================================================== */
 .section {
-  padding: 100px 8% 80px 8%;
+  padding: 50px 8% 30px 8%;
   position: relative;
   z-index: 5;
 }
@@ -1127,13 +1127,7 @@ header.scrolled {
   border-color: rgba(212, 175, 55, 0.15);
 }
 
-#experience {
-  padding-bottom: 20px;
-}
 
-#timeline {
-  padding-top: 30px;
-}
 
 /* ==========================================================================
    Certifications & Experience Section
@@ -1404,6 +1398,19 @@ header.scrolled {
   transform: translateY(-3px);
 }
 
+/* GitHub button */
+.contact-btn.github {
+  color: var(--accent);
+  border-color: rgba(212, 175, 55, 0.25);
+}
+
+.contact-btn.github:hover {
+  background: rgba(212, 175, 55, 0.08);
+  border-color: var(--accent);
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.25);
+  transform: translateY(-3px);
+}
+
 .contact-social-icons {
   display: flex;
   justify-content: center;
@@ -1572,7 +1579,7 @@ footer p {
   }
   
   .hero-content {
-    order: 2;
+    order: 1;
   }
   
   .hero-image-col {
